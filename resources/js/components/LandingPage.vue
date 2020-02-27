@@ -12,6 +12,11 @@
         </div>
         <div class="row justify-content-center">
             <div class="col">
+                <FrameworkSupportSection />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
                 <BottomSection />
             </div>
         </div>
@@ -22,11 +27,13 @@
 import BottomSection from "./bottomsection/BottomSection";
 import TopSection from "./topsection/TopSection";
 import TechSection from "./techsection/TechSection";
+import FrameworkSupportSection from "./frameworksupportsection/FrameworkSupportSection";
 export default {
     components: {
         TopSection,
         TechSection,
-        BottomSection
+        BottomSection,
+        FrameworkSupportSection
     },
     mounted() {
         console.log("Component mounted.");
