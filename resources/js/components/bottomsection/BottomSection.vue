@@ -12,7 +12,6 @@
                     <b>Raid-10</b> protection dan auto backup untuk keamanan
                     website PHP anda
                 </p>
-                <font-awesome-icon :icon="['fas', 'user-secret']" />
                 <CustomButton primary text="Pilih Hosting Anda" />
             </div>
             <div class="col-md-6">
@@ -46,7 +45,8 @@ h2 {
     margin-bottom: 5%;
 }
 
-p {
+p,
+b {
     font-family: $roboto;
 }
 </style>
