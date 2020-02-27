@@ -2,12 +2,17 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col">
-                <BottomSection />
+                <TopSection />
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col">
-                <TopSection />
+                <TechSection />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <BottomSection />
             </div>
         </div>
     </div>
@@ -16,9 +21,11 @@
 <script>
 import BottomSection from "./bottomsection/BottomSection";
 import TopSection from "./topsection/TopSection";
+import TechSection from "./techsection/TechSection";
 export default {
     components: {
         TopSection,
+        TechSection,
         BottomSection
     },
     mounted() {
