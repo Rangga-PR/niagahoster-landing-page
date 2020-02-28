@@ -40,6 +40,11 @@
         <BottomSection />
       </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <FooterSection />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,6 +57,7 @@ import PhpFeatureSection from "./phpfeaturesection/PhpFeatureSection";
 import ModuleSection from "./modulesection/ModuleSection";
 import IncludedSection from "./includedsection/IncludedSection";
 import PackageSection from "./packagesection/PackageSection";
+import FooterSection from "./footersection/FooterSection";
 export default {
   components: {
     TopSection,
@@ -61,7 +67,8 @@ export default {
     PhpFeatureSection,
     ModuleSection,
     IncludedSection,
-    PackageSection
+    PackageSection,
+    FooterSection
   },
   mounted() {
     console.log("Component mounted.");
