@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10 title">
+      <div class="col title">
         <h2>Modul Lengkap untuk Menjalankan Aplikasi PHP anda.</h2>
       </div>
     </div>
@@ -127,6 +127,7 @@ export default {
 <style lang="scss" scoped>
 h2 {
   font-weight: 500;
+  text-align: center;
 }
 
 .title {
