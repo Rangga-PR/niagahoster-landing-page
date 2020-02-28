@@ -4,7 +4,14 @@
       <span :class="[!withIcon ? 'no-icon' : '']">
         <i class="fas fa-check-circle"></i>
       </span>
-      <p class="item" v-html="item"></p>
+      <p class="five-star" v-if="item==='*****'">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </p>
+      <p v-else class="item" v-html="item"></p>
     </li>
   </ul>
 </template>
@@ -57,5 +64,14 @@ span i {
 
 .column-4 {
   columns: 4;
+}
+
+.five-star {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  i {
+    color: $light-blue;
+  }
 }
 </style>

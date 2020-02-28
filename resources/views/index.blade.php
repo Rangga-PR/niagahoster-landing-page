@@ -7,7 +7,7 @@
         <title>Niaga Hoster Landing Page</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Roboto:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800|Roboto:300&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="app">
