@@ -17,6 +17,11 @@
     </div>
     <div class="row justify-content-center">
       <div class="col">
+        <IncludedSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
         <FrameworkSupportSection />
       </div>
     </div>
@@ -40,6 +45,7 @@ import TechSection from "./techsection/TechSection";
 import FrameworkSupportSection from "./frameworksupportsection/FrameworkSupportSection";
 import PhpFeatureSection from "./phpfeaturesection/PhpFeatureSection";
 import ModuleSection from "./modulesection/ModuleSection";
+import IncludedSection from "./includedsection/IncludedSection";
 export default {
   components: {
     TopSection,
@@ -47,7 +53,8 @@ export default {
     BottomSection,
     FrameworkSupportSection,
     PhpFeatureSection,
-    ModuleSection
+    ModuleSection,
+    IncludedSection
   },
   mounted() {
     console.log("Component mounted.");
