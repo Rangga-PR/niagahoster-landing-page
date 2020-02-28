@@ -1,31 +1,36 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
-                <TopSection />
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <TechSection />
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <PhpFeatureSection />
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <FrameworkSupportSection />
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col">
-                <BottomSection />
-            </div>
-        </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <TopSection />
+      </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <TechSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <PhpFeatureSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <FrameworkSupportSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <ModuleSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <BottomSection />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -34,17 +39,19 @@ import TopSection from "./topsection/TopSection";
 import TechSection from "./techsection/TechSection";
 import FrameworkSupportSection from "./frameworksupportsection/FrameworkSupportSection";
 import PhpFeatureSection from "./phpfeaturesection/PhpFeatureSection";
+import ModuleSection from "./modulesection/ModuleSection";
 export default {
-    components: {
-        TopSection,
-        TechSection,
-        BottomSection,
-        FrameworkSupportSection,
-        PhpFeatureSection
-    },
-    mounted() {
-        console.log("Component mounted.");
-    }
+  components: {
+    TopSection,
+    TechSection,
+    BottomSection,
+    FrameworkSupportSection,
+    PhpFeatureSection,
+    ModuleSection
+  },
+  mounted() {
+    console.log("Component mounted.");
+  }
 };
 </script>
 

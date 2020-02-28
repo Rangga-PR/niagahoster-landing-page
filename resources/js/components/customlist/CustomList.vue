@@ -1,48 +1,61 @@
 <template>
-    <ul class="list-container">
-        <li v-for="(item, index) in items" :key="'item-key-' + index">
-            <span :class="[!withIcon ? 'no-icon' : '']"
-                ><i class="fas fa-check-circle"></i
-            ></span>
-            <p class="item" v-html="item"></p>
-        </li>
-    </ul>
+  <ul class="list-container" :class="[column ? 'column-'+column : '']">
+    <li v-for="(item, index) in items" :key="'item-key-' + index">
+      <span :class="[!withIcon ? 'no-icon' : '']">
+        <i class="fas fa-check-circle"></i>
+      </span>
+      <p class="item" v-html="item"></p>
+    </li>
+  </ul>
 </template>
 
 <script>
 export default {
-    name: "CustomList",
-    props: {
-        items: Array,
-        withIcon: Boolean
-    }
+  name: "CustomList",
+  props: {
+    items: Array,
+    withIcon: Boolean,
+    column: Number
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 li {
-    font-family: $roboto;
-    list-style-type: none;
-    margin: 1em 0 0 0;
-    display: flex;
+  font-family: $roboto;
+  list-style-type: none;
+  margin: 0 0 1em 0;
+  display: flex;
 }
 
 .item {
-    margin: 0;
+  margin: 0;
 }
 
 .list-container {
-    padding: 0;
-    margin-bottom: 0;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 span i {
-    color: $green;
-    font-size: 1.2em;
-    margin-right: 0.5em;
+  color: $green;
+  font-size: 1.2em;
+  margin-right: 0.5em;
 }
 
 .no-icon {
-    display: none;
+  display: none;
+}
+
+.column-2 {
+  columns: 2;
+}
+
+.column-3 {
+  columns: 3;
+}
+
+.column-4 {
+  columns: 4;
 }
 </style>
