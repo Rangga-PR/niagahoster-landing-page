@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="feature-row row justify-content-center">
       <div class="col">
         <h1>Powerful dengan Limit PHP yang Lebih Besar</h1>

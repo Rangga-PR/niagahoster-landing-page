@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row fullheader-body">
       <div class="col-md-6 ribbon-box">
         <div class="ribbon">
           <i class="fas fa-tag"></i>
@@ -25,7 +25,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row header-body fullheader-body">
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-light desktop-nav">
           <a class="navbar-brand" href="#">
@@ -158,5 +158,14 @@ export default {
   top: 24px;
   left: 16px;
   margin-left: -2px;
+}
+
+.header-body {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.fullheader-body {
+  padding: 0 7% 5px 7% !important;
 }
 </style>

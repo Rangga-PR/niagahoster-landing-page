@@ -1,57 +1,61 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Linux Hosting yang Stabil dengan Teknologi LVE</h2>
-        <p>
-          SuperMicro
-          <b>Intel Xeon 24-Cores</b> server dengan RAM
-          <b>128 GB</b> dan teknologi
-          <b>LVE CloudLinux</b> untuk
-          stabilitas server Anda. Dilengkapi dengan
-          <b>SSD</b> untuk
-          kecepatan
-          <b>MySQL</b> dan caching, Apache load balancer
-          berbasis LiteSpeed Technologies,
-          <b>CageFS</b> security,
-          <b>Raid-10</b> protection dan auto backup untuk keamanan
-          website PHP anda
-        </p>
-        <CustomButton primary text="Pilih Hosting Anda" />
-      </div>
-      <div class="col-md-6">
-        <img class="img-section" src="/images/Image support.png" alt="customer support" />
-      </div>
-    </div>
-    <div class="row social-media-section">
-      <div class="col-md-6 align-self-center">Bagikan jika anda menyukai halaman ini</div>
-      <div class="col-md-6 like-count">
-        <i class="fab fa-facebook-square"></i>
-        <div class="bubble">80k</div>
-        <i class="fab fa-twitter-square"></i>
-        <div class="bubble">450</div>
-        <i class="fab fa-google-plus-square"></i>
-        <div class="bubble">1900</div>
-      </div>
-    </div>
-    <div class="row help-section">
-      <div class="col-md-10">
-        <div class="contact-us">
-          <h1>
-            Perlu
-            <strong>Bantuan?</strong> Hubungi Kami:
-            <strong>0274-5305505</strong>
-          </h1>
+  <div>
+    <div class="container-fluid bottom-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Linux Hosting yang Stabil dengan Teknologi LVE</h2>
+          <p>
+            SuperMicro
+            <b>Intel Xeon 24-Cores</b> server dengan RAM
+            <b>128 GB</b> dan teknologi
+            <b>LVE CloudLinux</b> untuk
+            stabilitas server Anda. Dilengkapi dengan
+            <b>SSD</b> untuk
+            kecepatan
+            <b>MySQL</b> dan caching, Apache load balancer
+            berbasis LiteSpeed Technologies,
+            <b>CageFS</b> security,
+            <b>Raid-10</b> protection dan auto backup untuk keamanan
+            website PHP anda
+          </p>
+          <CustomButton primary text="Pilih Hosting Anda" />
+        </div>
+        <div class="col-md-6">
+          <img class="img-section" src="/images/Image support.png" alt="customer support" />
         </div>
       </div>
-      <div class="col-md-2">
-        <div class="live-chat">
-          <button class="chat-btn">
-            <span>
-              <i class="fas fa-comment-alt"></i>
-            </span>
-            Live Chat
-          </button>
+    </div>
+    <div class="container-fluid">
+      <div class="row social-media-section bottom-body">
+        <div class="col-md-6 align-self-center">Bagikan jika anda menyukai halaman ini</div>
+        <div class="col-md-6 like-count">
+          <i class="fab fa-facebook-square"></i>
+          <div class="bubble">80k</div>
+          <i class="fab fa-twitter-square"></i>
+          <div class="bubble">450</div>
+          <i class="fab fa-google-plus-square"></i>
+          <div class="bubble">1900</div>
+        </div>
+      </div>
+      <div class="row help-section bottom-body">
+        <div class="col-md-10">
+          <div class="contact-us">
+            <h1>
+              Perlu
+              <strong>Bantuan?</strong> Hubungi Kami:
+              <strong>0274-5305505</strong>
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="live-chat">
+            <button class="chat-btn">
+              <span>
+                <i class="fas fa-comment-alt"></i>
+              </span>
+              Live Chat
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -167,5 +171,10 @@ b {
   left: -4px;
   top: 50%;
   margin-top: -4px;
+}
+
+.bottom-body {
+  padding-left: 7% !important;
+  padding-right: 7% !important;
 }
 </style>

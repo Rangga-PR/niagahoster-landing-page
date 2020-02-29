@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col title">
         <h1>Mendukung Penuh Framework Laravel</h1>

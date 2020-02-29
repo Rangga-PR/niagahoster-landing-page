@@ -1,5 +1,5 @@
 <template>
-  <div class="container footer-section">
+  <div class="container-fluid footer-section footer-body">
     <div class="row nav-section">
       <div class="col menu">
         <FooterMenu
@@ -276,5 +276,9 @@ export default {
 .menu {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer-body {
+  padding: 0 7% 5px 7% !important;
 }
 </style>

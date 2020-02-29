@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid modulesection-body">
     <div class="row justify-content-center">
       <div class="col title">
         <h2>Modul Lengkap untuk Menjalankan Aplikasi PHP anda.</h2>
@@ -147,5 +147,9 @@ div.collapse:not(.show) {
 div.collapsing {
   height: 30vh;
   transition: ease-in 0.5s;
+}
+
+.modulesection-body {
+  padding: 0 7% 5px 7% !important;
 }
 </style>

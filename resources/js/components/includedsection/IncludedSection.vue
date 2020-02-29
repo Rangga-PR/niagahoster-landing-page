@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col title">
         <h1>Semua Paket Hosting Sudah Termasuk</h1>
