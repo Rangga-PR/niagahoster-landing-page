@@ -16,6 +16,7 @@
 
 <script>
 import PackageCard from "../packagecard/PackageCard";
+import axios from "axios";
 export default {
   name: "PackageSection",
   components: {
@@ -23,86 +24,18 @@ export default {
   },
   data() {
     return {
-      packages: [
-        {
-          bestseller: false,
-          package_name: "Bayi",
-          price: "Rp 19.900",
-          discounted_price: "Rp 14.900",
-          registered_users: "938",
-          features: [
-            "<b>0.5X RESOURCE POWER</b>",
-            "<b>500 MB</b> Disk Space",
-            "<b>Unlimited</b> Bandwidth",
-            "<b>Unlimited</b> Databases",
-            "<b>1</b> Domain",
-            "<b>Instant</b> Backup",
-            "<b>Unlimited SSL</b> Gratis Selamanya"
-          ]
-        },
-        {
-          bestseller: false,
-          package_name: "Pelajar",
-          price: "Rp 46.900",
-          discounted_price: "Rp 23.450",
-          registered_users: "4.168",
-          features: [
-            "<b>1X RESOURCE POWER</b>",
-            "<b>Unlimited</b> Disk Space",
-            "<b>Unlimited</b> Bandwidth",
-            "<b>Unlimited</b> POP3 Email",
-            "<b>Unlimited</b> Databases",
-            "<b>10</b> Addon Domains",
-            "<b>Instant</b> Backup",
-            "<b>Domain Gratis</b> Selamanya",
-            "<b>Unlimited SSL</b> Gratis Selamanya"
-          ]
-        },
-        {
-          bestseller: true,
-          package_name: "Personal",
-          price: "Rp 58.900",
-          discounted_price: "Rp 38.900",
-          registered_users: "10.017",
-          features: [
-            "<b>2X RESOURCE POWER</b>",
-            "<b>Unlimited</b> Disk Space",
-            "<b>Unlimited</b> Bandwidth",
-            "<b>Unlimited</b> POP3 Email",
-            "<b>Unlimited</b> Databases",
-            "<b>Unlimited</b> Addon Domains",
-            "<b>Instant</b> Backup",
-            "<b>Domain Gratis</b> Selamanya",
-            "<b>Unlimited SSL</b> Gratis Selamanya",
-            "<b>Private</b> Name Server",
-            "<b>SpamAssasin</b> Mail Protection"
-          ]
-        },
-        {
-          bestseller: false,
-          discount: "40%",
-          package_name: "Bisnis",
-          price: "Rp 109.900",
-          discounted_price: "Rp 65.900",
-          registered_users: "3.552",
-          features: [
-            "<b>3X RESOURCE POWER</b>",
-            "<b>Unlimited</b> Disk Space",
-            "<b>Unlimited</b> Bandwidth",
-            "<b>Unlimited</b> POP3 Email",
-            "<b>Unlimited</b> Databases",
-            "<b>Unlimited</b> Addon Domains",
-            "<b>Magic Auto</b> Backup Restore",
-            "<b>Domain Gratis</b> Selamanya",
-            "<b>Unlimited SSL</b> Gratis Selamanya",
-            "<b>Private</b> Name Server",
-            "<b>Prioritas</b> Layanan Support",
-            "*****",
-            "<b>SpamExpert</b> Pro Mail Protection"
-          ]
-        }
-      ]
+      packages: []
     };
+  },
+  methods: {
+    getPackageData() {
+      axios.get("/api/data/hosting-package").then(response => {
+        this.packages = response.data;
+      });
+    }
+  },
+  created() {
+    this.getPackageData();
   }
 };
 </script>

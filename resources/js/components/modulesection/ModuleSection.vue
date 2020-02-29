@@ -29,6 +29,7 @@
 <script>
 import CustomButton from "../custombuton/CustomButton";
 import CustomList from "../customlist/CustomList";
+import axios from "axios";
 export default {
   name: "ModuleSection",
   components: {
@@ -45,6 +46,11 @@ export default {
     },
     onWindowSizeChange(event) {
       this.changeColumn();
+    },
+    getModuleData() {
+      axios.get("/api/data/php-module").then(response => {
+        this.modules = response.data;
+      });
     }
   },
   mounted() {
@@ -57,69 +63,11 @@ export default {
   data() {
     return {
       column: 1,
-      modules: [
-        "IcePhp",
-        "apc",
-        "apcu",
-        "apm",
-        "ares",
-        "bcmath",
-        "bcompiler",
-        "big_int",
-        "bigset",
-        "bloomy",
-        "bz2_filter",
-        "clamav",
-        "coin_acceptor",
-        "crack",
-        "dba",
-        "http",
-        "huffman",
-        "idn",
-        "igbinary",
-        "imagick",
-        "imap",
-        "inclued",
-        "inotify",
-        "interbase",
-        "intl",
-        "ioncube_loader",
-        "ioncube_loader_4",
-        "jsmin",
-        "json",
-        "Idap",
-        "nd_pdo_mysql",
-        "oauth",
-        "oci8",
-        "odbc",
-        "opcache",
-        "pdf",
-        "pdo",
-        "pdo_dblib",
-        "pdo_firebird",
-        "pdo_mysql",
-        "pdo_odbc",
-        "pdo_pgsql",
-        "pdo_sqlite",
-        "pgsql",
-        "phalcon",
-        "stats",
-        "stem",
-        "stomp",
-        "suhousin",
-        "sybase_ct",
-        "sysvmsg",
-        "sysvsem",
-        "sysvshm",
-        "tidy",
-        "timezonedb",
-        "trader",
-        "translit",
-        "uploadprogress",
-        "uri_template",
-        "uuid"
-      ]
+      modules: []
     };
+  },
+  created() {
+    this.getModuleData();
   }
 };
 </script>
