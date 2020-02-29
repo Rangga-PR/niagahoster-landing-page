@@ -1,5 +1,5 @@
 <template>
-  <div class="card footer-menu">
+  <div class="card footer-menu-card">
     <div class="card-header footer-menu">
       <p class="title">{{menu.title.toUpperCase()}}</p>
     </div>
@@ -167,5 +167,9 @@ button {
   .card {
     width: 100%;
   }
+}
+
+.footer-menu-card {
+  margin-top: 60px;
 }
 </style>

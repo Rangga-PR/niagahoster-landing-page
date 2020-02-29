@@ -2,6 +2,11 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col">
+        <HeaderSection />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
         <TopSection />
       </div>
     </div>
@@ -58,6 +63,7 @@ import ModuleSection from "./modulesection/ModuleSection";
 import IncludedSection from "./includedsection/IncludedSection";
 import PackageSection from "./packagesection/PackageSection";
 import FooterSection from "./footersection/FooterSection";
+import HeaderSection from "./headersection/HeaderSection";
 export default {
   components: {
     TopSection,
@@ -68,7 +74,8 @@ export default {
     ModuleSection,
     IncludedSection,
     PackageSection,
-    FooterSection
+    FooterSection,
+    HeaderSection
   },
   mounted() {
     console.log("Component mounted.");
